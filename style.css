@@ -7,24 +7,17 @@
 }
 
 
-   body {
+body {
    background-image: url('background.png');
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
    background-attachment: fixed; /* Optional: keeps the image still while you scroll */
 }
-;
-
-
-
 
 #mainNav {
   
 }
-
-
-
 
 
 
