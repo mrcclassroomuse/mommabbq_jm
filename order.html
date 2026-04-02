@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Order Online | Momma's BBQ</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <nav id="mainNav">
+       <div class="logo">Momma's BBQ</div>
+       <ul class="nav-links">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="menu.html">Menu</a></li>
+           <li><a href="order.html">Order Online</a></li>
+           <li><a href="locations.html">Locations</a></li>
+           <li><a href="charity.html">2% for Louisville</a></li>
+           <li><a href="about.html">About Us</a></li>
+           <li><a href="allergens.html">Allergen Info</a></li>
+       </ul>
+   </nav>
+
+
+   <header class="hero">
+       <div class="text-plate">
+           <h1>Order Online</h1>
+           <p>Select your location to start your order:</p>
+           <select id="store-select" style="padding: 10px; border-radius: 5px; margin-top: 10px; width: 100%; max-width: 400px;">
+               <option>St. Matthews (102 Bauer Ave)</option>
+               <option>Hurstbourne (119 S Hurstbourne Pkwy)</option>
+           </select>
+       </div>
+   </header>
+
+
+   <div class="order-layout">
+       <!-- Menu Items Column -->
+       <main class="menu-selection">
+          
+           <!-- Award Winners -->
+           <div class="text-plate-light">
+               <h2 style="color: #e31837;">Award Winners</h2>
+               <div class="order-item">
+                   <div class="item-info">
+                       <h3>The "Best Wings Ever" (6pc)</h3>
+                       <p>Smoked over hickory, dry-rubbed, and served with spicy mustard.</p>
+                       <span class="price">$14.00</span>
+                   </div>
+                   <button class="add-btn" data-name="Smoked Wings" data-price="14.00">Add to Bag</button>
+               </div>
+               <div class="order-item">
+                   <div class="item-info">
+                       <h3>Famous Beef Ribs</h3>
+                       <p>One massive rib, featured on Diners, Drive-Ins & Dives.</p>
+                       <span class="price">$22.00</span>
+                   </div>
+                   <button class="add-btn" data-name="Beef Ribs" data-price="22.00">Add to Bag</button>
+               </div>
+           </div>
+
+
+           <!-- Sandwiches & Platters -->
+           <div class="text-plate-light" style="margin-top: 25px;">
+               <h2>Sandwiches & Platters</h2>
+               <div class="order-item">
+                   <div class="item-info">
+                       <h3>Pulled Pork Sandwich</h3>
+                       <p>12-hour smoked pork on a toasted bun.</p>
+                       <span class="price">$12.50</span>
+                   </div>
+                   <button class="add-btn" data-name="Pork Sandwich" data-price="12.50">Add to Bag</button>
+               </div>
+               <div class="order-item">
+                   <div class="item-info">
+                       <h3>Sliced Beef Brisket Platter</h3>
+                       <p>Dry-rubbed brisket with two signature sides.</p>
+                       <span class="price">$19.95</span>
+                   </div>
+                   <button class="add-btn" data-name="Brisket Platter" data-price="19.95">Add to Bag</button>
+               </div>
+               <div class="order-item">
+                   <div class="item-info">
+                       <h3>Smoked Turkey Breast</h3>
+                       <p>Moist, hickory-smoked turkey with two sides.</p>
+                       <span class="price">$17.50</span>
+                   </div>
+                   <button class="add-btn" data-name="Turkey Platter" data-price="17.50">Add to Bag</button>
+               </div>
+           </div>
+
+
+           <!-- Famous Sides -->
+           <div class="text-plate-light" style="margin-top: 25px;">
+               <h2>Momma's Sides</h2>
+               <div class="order-item">
+                   <div class="item-info">
+                       <h3>Momma's Pickles</h3>
+                       <p>The original sweet and tangy family recipe.</p>
+                       <span class="price">$4.00</span>
+                   </div>
+                   <button class="add-btn" data-name="Pickles" data-price="4.00">Add to Bag</button>
+               </div>
+               <div class="order-item">
+                   <div class="item-info">
+                       <h3>Cheesy Corn</h3>
+                       <p>A Kansas City classic favorite.</p>
+                       <span class="price">$4.50</span>
+                   </div>
+                   <button class="add-btn" data-name="Cheesy Corn" data-price="4.50">Add to Bag</button>
+               </div>
+               <div class="order-item">
+                   <div class="item-info">
+                       <h3>Mac & Cheese</h3>
+                       <p>Rich, creamy, and house-made.</p>
+                       <span class="price">$4.50</span>
+                   </div>
+                   <button class="add-btn" data-name="Mac & Cheese" data-price="4.50">Add to Bag</button>
+               </div>
+           </div>
+       </main>
+
+
+       <!-- Sticky Bag Column -->
+       <aside class="order-cart">
+           <div class="text-plate-light cart-card">
+               <h2>Your Bag</h2>
+               <ul id="cart-items" style="list-style: none; padding: 0; margin-bottom: 20px;">
+                   <p style="color: #888; font-style: italic;">No items added yet...</p>
+               </ul>
+               <div class="cart-total-area" style="border-top: 2px solid #eee; padding-top: 15px;">
+                   <p style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.2rem;">
+                       Total: <span id="subtotal">$0.00</span>
+                   </p>
+                   <button id="checkout-btn" class="direction-btn" style="width: 100%; cursor: pointer;" disabled onclick="alert('Order received! We are firing up the smoker!')">Place Order</button>
+               </div>
+           </div>
+       </aside>
+   </div>
+
+
+   <footer class="main-footer">
+       <div class="footer-content">
+           <p>© 2024 Momma's Mustard, Pickles & BBQ | Louisville, KY</p>
+           <div class="social-links">
+               <a href="https://facebook.com" target="_blank">Facebook</a>
+               <a href="https://instagram.com" target="_blank">Instagram</a>
+               <a href="https://x.com" target="_blank">X (Twitter)</a>
+           </div>
+       </div>
+   </footer>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+</html>
+
+
