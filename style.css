@@ -1,0 +1,311 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* Turns all text black */
+   color: #000000 !important;
+}
+
+
+   body {
+   background-image: url('https://f.playcode.io/p-2652741/v-1/019d01fc-4907-71be-8881-29b23ee9961b/screenshot-2026-03-18-1.25.31-pm.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed; /* Optional: keeps the image still while you scroll */
+}
+;
+
+
+
+
+#mainNav {
+  
+}
+
+
+
+
+
+
+.nav-links {
+   display: flex;
+   list-style: none;
+}
+
+
+.nav-links li {
+   margin-left: 20px;
+}
+
+
+.nav-links a {
+   text-decoration: none;
+   font-weight: bold;
+   color:#rgba(238, 233, 215, 0)!important; /* Kept Mustard Yellow for links as part of original palette */
+}
+#mainNav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 5%;
+   /* Dark semi-transparent background for high contrast with white text */
+   background: rgba(244, 117, 7, 0.75);
+   /* Keeps the nav at the top while scrolling */
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   /* Optional: Deep red border from original palette for extra branding */
+   border-bottom: 8px solid #e5c306;
+}
+
+
+.nav-links a {
+   text-decoration: none;
+   font-weight: bold;
+   /* Ensures nav links are strictly white */
+   color: #ffffff !important;
+}
+
+
+.nav-links a:hover {
+   /* Mustard yellow hover effect from original palette */
+   color: #ffdb58 !important;
+}
+
+
+.hero {
+   height: 60vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+
+/* Adds a dark background "plate" to all text sections */
+.text-plate, .text-plate-light, .section-title-plate {
+   background: rgba(244, 117, 7, 0.75);
+   padding: 40px;
+   border-radius: 12px;
+   border: 8px solid #e5c307; /* Deep red border from original palette */
+}
+
+
+.content {
+   padding: 50px 10%;
+   text-align: center;
+}
+
+
+#locations {
+   padding: 50px 10%;
+}
+
+
+.map-card {
+   /* Background for the card to house white text */
+   background: rgba(0, 0, 0, 0.8);
+   border: 1px solid #8b0000;
+   padding: 25px;
+   border-radius: 15px;
+   width: 100%;
+   max-width: 500px;
+   text-align: center;
+}
+
+
+.map-wrapper {
+   margin: 20px 0;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+
+.direction-btn {
+   display: inline-block;
+   padding: 12px 25px;
+   border: 2px solid #ffdb58; /* Mustard yellow border */
+   text-decoration: none;
+   border-radius: 5px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+
+
+.direction-btn:hover {
+   background: #ffdb58;
+   color: #000000 !important; /* Turns black on hover for high contrast */
+}
+
+
+
+
+
+
+/* Charity Page Specifics */
+.charity-hero {
+   background-color: #d35400;
+   color: white;
+   padding: 60px 20px;
+}
+
+
+.charity-list {
+   text-align: left;
+   max-width: 700px;
+   margin: 30px auto;
+   background: #fff;
+   padding: 30px;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+
+.charity-list h3 {
+   color: #fbfaf9;
+   border-bottom: px solid #d35400;
+   padding-bottom: 15px;
+}
+
+
+.charity-list ul {
+   list-style: none;
+   padding: 0;
+}
+
+
+.charity-list li {
+   margin-bottom: 15px;
+   font-size: 1.1rem;
+}
+
+
+/* Hide the default radio circle */
+.charity-card input[type="radio"] {
+   display: none;
+}
+
+
+/* Style for the card when it is NOT selected */
+.charity-card .card-content {
+   display: block;
+   cursor: pointer;
+   border: 2px solid transparent;
+   transition: all 0.3s ease;
+}
+
+
+/* THE FIX: Style for the card when the hidden radio is checked */
+.charity-card input[type="radio"]:checked + .card-content {
+   border: 2px solid #e31837; /* Use Momma's BBQ Red */
+   background-color: #fffafa; /* Light tint */
+   transform: scale(1.02);
+   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+
+
+.impact-stats {
+   margin-top: 40px;
+   font-style: italic;
+   color: #d35400;
+   font-weight: bold;
+   font-size: 1.2rem;
+}
+
+
+.bbq-thumb {
+   width: 500px;  /* Change this to your desired width */
+   height: 500px; /* Change this to your desired height */
+   object-fit: cover; /* Crops the image to fit the box perfectly */
+   border-radius: 8px;
+   margin: 10px;
+}
+.map-grid {
+   display: flex;
+   gap: 30px;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 20px 5%;
+}
+
+
+.map-card {
+   flex: 1;
+   min-width: 320px;
+   max-width: 500px;
+   background: #ffffff;
+   padding: 20px;
+   border-radius: 12px;
+   box-shadow: 0 6px 12px rgba(21, 20, 20, 0.1);
+   text-align: center;
+}
+
+
+.map-wrapper {
+   margin: 15px 0;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+
+/* Directions Button Style */
+.direction-btn {
+   display: inline-block;
+   background-color: #d35400; /* Deep BBQ Orange */
+   color: rgb(0, 0, 0);
+   padding: 12px 24px;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 30px;
+   transition: background 0.3s ease;
+   margin-top: 10px;
+}
+
+
+.direction-btn:hover {
+   background-color: #e67e22;
+}
+
+
+
+
+.order-settings {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   background: #f8f8f8;
+   padding: 15px;
+   border-radius: 8px;
+   margin-top: 15px;
+   flex-wrap: wrap;
+}
+
+
+.setting-group {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+
+
+.setting-group label {
+   font-size: 0.8rem;
+   font-weight: bold;
+   margin-bottom: 5px;
+   color: #555;
+}
+
+
+.setting-group select {
+   padding: 8px;
+   border-radius: 4px;
+   border: 1px solid #000000;
+}
+
+
+
+
+
